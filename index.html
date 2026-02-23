@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oliver Brad Martell | System Analyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">OLIVER BRAD MARTELL</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="expertise.html">Expertise</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero fade-in">
+        <div class="container">
+            <h1>System Analyst | Enterprise Systems Developer</h1>
+            <p>
+                I specialize in analyzing business workflows and engineering structured digital systems that improve
+                operational efficiency.
+                My experience spans frontend design, full-stack development, and enterprise-level case management
+                systems deployed in real business environments.
+            </p>
+            <div class="hero-buttons">
+                <a href="case-studies.html" class="btn-primary">View Case Studies</a>
+                <a href="#" class="btn-outline">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="focus-section">
+        <div class="container focus-grid fade-in">
+            <div class="focus-card">
+                <h3>Business Process Analysis</h3>
+                <p>Understanding operational workflows and translating them into structured system requirements.</p>
+            </div>
+            <div class="focus-card">
+                <h3>System Architecture & Database Design</h3>
+                <p>Designing scalable relational systems with clear logic and normalized data structures.</p>
+            </div>
+            <div class="focus-card">
+                <h3>Enterprise System Development</h3>
+                <p>Developing modular, role-based applications tailored to real business operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-case fade-in">
+        <div class="container featured-grid">
+            <div>
+                <h2>Featured Enterprise Case Study</h2>
+                <h3>AplusCMS – Case Management System</h3>
+                <p>
+                    Engineered and deployed a full-scale case management system for A Plus Ventures,
+                    automating operational workflows, centralizing client data, and improving efficiency by 90%.
+                </p>
+                <a href="case-apluscms.html" class="btn-primary">View Full Case Study</a>
+            </div>
+            <div class="placeholder-image">
+                <a href="assets/images/AplusCMS_preview2.png" target="_blank">
+                    <img src="assets/images/AplusCMS_preview2.png" alt="AplusCMS System Preview">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline fade-in">
+        <div class="container">
+            <h2>Professional Journey</h2>
+            <div class="timeline-item">
+                <strong>Semester 3</strong> – UiTM e-Profile (Frontend System Design)
+            </div>
+            <div class="timeline-item">
+                <strong>Semester 5</strong> – BloodBase Management System (Functional Development)
+            </div>
+            <div class="timeline-item">
+                <strong>Internship</strong> – AplusCMS (Enterprise Case Management System)
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Oliver Brad Martell | Kuala Lumpur, Malaysia</p>
+        </div>
+    </footer>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.2
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+
+</html>

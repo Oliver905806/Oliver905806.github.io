@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UiTM e-Profile | Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">OLIVER BRAD MARTELL</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="expertise.html">Expertise</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="case-detail-hero fade-in">
+        <div class="container">
+            <h1>UiTM e-Profile</h1>
+            <p class="case-detail-type">
+                Frontend Academic System Interface
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://oliver905806.github.io/oliverbrad.github.io/" target="_blank" class="btn-primary">
+                    View Live Demo
+                </a>
+
+                <a href="case-studies.html" class="btn-outline">
+                    Back to Case Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section class="case-detail-content">
+
+        <div class="container">
+
+            <!-- EXECUTIVE SUMMARY -->
+            <div class="case-card-detail fade-in">
+                <h2>Executive Overview</h2>
+                <p>
+                    The UiTM e-Profile system was developed as a structured frontend interface
+                    aimed at improving profile visibility, administrative clarity,
+                    and layout consistency within an academic environment.
+                    The focus was on creating a clean, scalable, and responsive
+                    user experience aligned with institutional requirements.
+                </p>
+            </div>
+
+            <!-- CONTEXT & OBJECTIVE GRID -->
+            <div class="case-grid-detail fade-in">
+
+                <div class="case-card-detail">
+                    <h2>Business Context</h2>
+                    <p>
+                        Educational institutions require centralized profile interfaces
+                        that improve transparency, accessibility, and communication
+                        between students, staff, and administrators.
+                    </p>
+                </div>
+
+                <div class="case-card-detail">
+                    <h2>Project Objective</h2>
+                    <p>
+                        To design and structure a responsive frontend system
+                        that enhances usability, information hierarchy,
+                        and layout scalability.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ROLE SECTION -->
+            <div class="case-card-detail fade-in">
+                <h2>My Role & Contributions</h2>
+                <ul class="case-list">
+                    <li>Designed layout hierarchy and navigation flow</li>
+                    <li>Structured modular UI components</li>
+                    <li>Implemented responsive design behavior</li>
+                    <li>Ensured visual consistency across pages</li>
+                    <li>Organized clean and maintainable CSS structure</li>
+                </ul>
+            </div>
+
+            <!-- DESIGN APPROACH -->
+            <div class="case-card-detail fade-in">
+                <h2>Frontend Architecture & Design Approach</h2>
+                <p>
+                    The interface was built using modular HTML sections,
+                    structured CSS styling, and JavaScript interactions.
+                    Emphasis was placed on:
+                </p>
+
+                <ul class="case-list">
+                    <li>Clear information hierarchy</li>
+                    <li>Responsive grid layout principles</li>
+                    <li>Consistent spacing and typography standards</li>
+                    <li>User-focused navigation logic</li>
+                </ul>
+            </div>
+
+            <!-- LIVE DEMO HIGHLIGHT -->
+            <div class="case-card-detail fade-in" style="text-align:center;">
+                <h2>Live System Access</h2>
+                <p>
+                    The system is accessible via a live demo environment,
+                    allowing full exploration of the interface structure and navigation design.
+                </p>
+
+                <div style="margin-top:25px;">
+                    <a href="https://oliver905806.github.io/oliverbrad.github.io/" target="_blank" class="btn-primary">
+                        Launch Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- LEARNING OUTCOME -->
+            <div class="case-card-detail fade-in">
+                <h2>Key Learning Outcomes</h2>
+                <p>
+                    This project strengthened my understanding of frontend system structuring,
+                    responsive design principles, and user-centric layout planning.
+                    It established the foundation for my transition into full-stack
+                    and enterprise-level application development.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Oliver Brad Martell | Kuala Lumpur, Malaysia</p>
+        </div>
+    </footer>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.2
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+
+</html>

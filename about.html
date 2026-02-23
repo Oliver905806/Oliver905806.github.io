@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About | Oliver Brad Martell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">OLIVER BRAD MARTELL</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="expertise.html">Expertise</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero fade-in">
+        <div class="container">
+            <h1>About Me</h1>
+            <p class="about-subtext">
+                System Analyst | Enterprise Systems Developer
+                | 25 Years Old
+            </p>
+        </div>
+    </section>
+
+    <section class="about-content fade-in">
+        <div class="container about-grid">
+
+            <div class="about-text">
+                <h2>Professional Overview</h2>
+                <p>
+                    I am a Bachelor of Information Science (Hons) Information Systems Management graduate with a strong
+                    focus on business process
+                    analysis, system architecture, and enterprise application development.
+                    My experience spans academic system design and real-world enterprise deployment, where I transformed
+                    manual operational workflows into structured digital systems.
+                </p>
+
+                <p>
+                    During my internship, I engineered a full-scale Case Management System (AplusCMS) for A Plus
+                    Ventures, significantly improving workflow visibility, automating renewal detection, and increasing
+                    operational efficiency by 90%.
+                </p>
+
+                <h2>Professional Philosophy</h2>
+                <p>
+                    I believe that effective systems are not built by code alone.
+                    They are built through understanding business problems, analyzing workflow dependencies, and
+                    designing structured, scalable solutions that align with organizational goals.
+                </p>
+
+                <h2>Career Objective</h2>
+                <p>
+                    I aim to contribute as a System Analyst or Business Analyst within organizations that value
+                    structured thinking, system optimization, and data-driven operational improvement.
+                </p>
+            </div>
+
+            <div class="about-highlight">
+                <div class="highlight-card">
+                    <h3>Core Strengths</h3>
+                    <ul>
+                        <li>Business Workflow Analysis</li>
+                        <li>Requirement Gathering & Documentation</li>
+                        <li>System Architecture Planning</li>
+                        <li>Database Design (ERD & Normalization)</li>
+                        <li>Full-Stack Development (PHP & MySQL)</li>
+                        <li>Agile Phased Deployment</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Professional Values</h3>
+                    <ul>
+                        <li>Structured Thinking</li>
+                        <li>Continuous Improvement</li>
+                        <li>Data Accuracy & Integrity</li>
+                        <li>Scalable Design Principles</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Oliver Brad Martell | Kuala Lumpur, Malaysia</p>
+        </div>
+    </footer>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.2
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+
+</html>

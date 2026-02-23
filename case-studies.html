@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Case Studies | Oliver Brad Martell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">OLIVER BRAD MARTELL</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="case-studies.html" class="active">Case Studies</a>
+                <a href="expertise.html">Expertise</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="case-hero fade-in">
+        <div class="container">
+            <h1>Case Studies</h1>
+            <p class="case-subtext">
+                Engineered digital systems designed to solve real operational challenges.
+            </p>
+        </div>
+    </section>
+
+    <section class="case-overview fade-in">
+        <div class="container case-grid">
+
+            <!-- AplusCMS (Highlighted) -->
+            <div class="case-card featured-card">
+                <h2>AplusCMS</h2>
+                <p class="case-type">Enterprise Case Management System</p>
+                <p>
+                    Designed and deployed a full-scale case management system for A Plus Ventures,
+                    automating workflows, centralizing data, and improving operational efficiency by 90%.
+                </p>
+                <a href="case-apluscms.html" class="btn-primary">View Case Study</a>
+            </div>
+
+            <!-- BloodBase -->
+            <div class="case-card">
+                <h2>BloodBase Management System</h2>
+                <p class="case-type">Functional System with Authentication & Database</p>
+                <p>
+                    Developed a structured blood donor management system featuring role-based access,
+                    session control, and CRUD functionality integrated with a relational database.
+                </p>
+                <a href="case-bloodbase.html" class="btn-outline">View Case Study</a>
+            </div>
+
+            <!-- UiTM e-Profile -->
+            <div class="case-card">
+                <h2>UiTM e-Profile</h2>
+                <p class="case-type">Frontend Academic System Interface</p>
+                <p>
+                    Designed and structured a responsive academic profile interface focused on layout
+                    consistency, user navigation, and frontend architecture principles.
+                </p>
+                <a href="case-eprofile.html" class="btn-outline">View Case Study</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Oliver Brad Martell | Kuala Lumpur, Malaysia</p>
+        </div>
+    </footer>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.2
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+
+</html>
