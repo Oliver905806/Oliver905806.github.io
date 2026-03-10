@@ -1133,109 +1133,109 @@ html {
    IMPACT SECTION
 ========================= */
 
-.impact-cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-    margin-bottom:60px;
+.impact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
-.impact-card{
-    background:white;
-    padding:35px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+.impact-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 
-.impact-card h3{
-    font-size:2.5rem;
-    color:#3a7bd5;
-    margin-bottom:10px;
+.impact-card h3 {
+    font-size: 2.5rem;
+    color: #3a7bd5;
+    margin-bottom: 10px;
 }
 
-.impact-card p{
-    font-size:0.95rem;
-    color:#555;
+.impact-card p {
+    font-size: 0.95rem;
+    color: #555;
 }
 
 
 /* Efficiency Analysis */
 
-.impact-analysis{
-    max-width:900px;
-    margin:auto;
+.impact-analysis {
+    max-width: 900px;
+    margin: auto;
 }
 
-.impact-analysis h3{
-    text-align:center;
-    margin-bottom:20px;
+.impact-analysis h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.impact-intro{
-    text-align:center;
-    margin-bottom:30px;
-    color:#555;
+.impact-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
 }
 
 
 /* Formula */
 
-.efficiency-formula{
-    text-align:center;
-    font-style:italic;
-    margin-bottom:35px;
+.efficiency-formula {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 35px;
 }
 
-.formula{
-    display:block;
-    font-size:1.2rem;
-    margin-top:8px;
+.formula {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 8px;
 }
 
 
 /* Table */
 
-.impact-table-wrapper{
-    overflow-x:auto;
+.impact-table-wrapper {
+    overflow-x: auto;
 }
 
-.impact-table{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
-    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+.impact-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
-.impact-table th{
-    background:#1E2A38;
-    color:white;
-    padding:14px;
-    font-size:0.9rem;
+.impact-table th {
+    background: #1E2A38;
+    color: white;
+    padding: 14px;
+    font-size: 0.9rem;
 }
 
-.impact-table td{
-    padding:14px;
-    border-bottom:1px solid #eee;
-    font-size:0.9rem;
+.impact-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
 }
 
-.impact-table tr:hover{
-    background:#f7f9fc;
+.impact-table tr:hover {
+    background: #f7f9fc;
 }
 
-.improve{
-    color:#2c7be5;
-    font-weight:600;
+.improve {
+    color: #2c7be5;
+    font-weight: 600;
 }
 
 
 /* Summary */
 
-.impact-summary{
-    text-align:center;
-    margin-top:25px;
-    font-size:1rem;
+.impact-summary {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1rem;
 }
 
 /* ========================================
@@ -1824,3 +1824,4 @@ html {
     transform: translateY(-2px);
 
 }
+
